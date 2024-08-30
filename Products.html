@@ -8,7 +8,7 @@
     <meta name="keywords" content="bootstrap, bootstrap4" />
 
     <meta name="description" content="MULTIWOOD FURNITURE Executive Office Chair with Luxurious PU Leather, Chrome Base, Back and Height Adjustable" />
-    <meta name="category" content="IsaDora" />
+    <meta name="category" content="ProductList" />
     <meta property="og:description" content="MULTIWOOD FURNITURE Executive Office Chair with Luxurious PU Leather, Chrome Base, Back and Height Adjustable" />
     <meta property="og:title" content="Furniture Home" />
     <meta property="og:url" content="https://furniture-gold-beta.vercel.app/" />
@@ -26,13 +26,24 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        .product-card {
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+            .product-card:hover {
+                transform: scale(1.05);
+            }
+
         .product-image {
             width: 100%;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
         }
 
         .product-details {
-            padding: 20px;
+            padding: 15px;
         }
     </style>
 </head>
@@ -75,7 +86,7 @@
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
                         <h1>
-                            Big Bold Extreme Mascara - Black
+                            Sarmad Eau de Parfum - 100ml
                         </h1>
                     </div>
                 </div>
@@ -88,41 +99,51 @@
     <!-- End Hero Section -->
 
     <div class="container mt-5">
+        <h1 class="text-center mb-5">Product Listing</h1>
         <div class="row">
-            <!-- Product Image -->
-            <div class="col-md-6">
-                <img src="https://v2cdn.boutiqaat.com/media/catalog/product/0/0/000052.jpg" alt="Big Bold Extreme Mascara - Black
-" class="product-image">
-            </div>
-            <!-- Product Details -->
-            <div class="col-md-6 product-details">
-                <h2 id="000034">
-                    Big Bold Extreme Mascara - Black
-                </h2>
-                <p class="text-muted">Category: <span>Makeup Value Gift Sets</span></p>
-                <h4 class="text-danger">
-                    $113
-                </h4>
-                <p class="mt-4">
-                    Includes: - Big Bold Extreme Mascara - Black
-                </p>
-                <p>
-                    Brand: IsaDora
-
-                </p>
-                <p>
-                    Gender: Women
-                </p>
-                <form action="/add-to-cart" method="POST">
-                    <div class="form-group">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" class="form-control" value="1" min="1" max="10">
+            <!-- Product Card 1 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Product 1" class="product-image">
+                    <div class="product-details">
+                        <h5>
+                            Sarmad Eau de Parfum - 100ml
+                        </h5>
+                        <p class="text-danger">$564</p>
+                        <a href="/SarmadEaudeParfum-100ml.html" class="btn btn-primary">View Details</a>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">Add to Cart</button>
-                </form>
+                </div>
             </div>
+            <!-- Product Card 2 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Product 2" class="product-image">
+                    <div class="product-details">
+                        <h5>
+                            Big Bold Extreme Mascara - Black
+                        </h5>
+                        <p class="text-danger">$113</p>
+                        <a href="/BigBoldExtremeMascara-Black.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Product 3" class="product-image">
+                    <div class="product-details">
+                        <h5>
+                            Saray Eau De Parfum - 100ml
+                        </h5>
+                        <p class="text-danger">$423</p>
+                        <a href="/SarayEauDeParfum-100ml.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- More Product Cards can be added in a similar manner -->
         </div>
     </div>
+
 
     <!-- Start Footer Section -->
     <footer class="footer-section">
@@ -130,15 +151,8 @@
 
             <div class="row g-5 mb-5">
                 <div class="col-lg-4">
-                    <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">
-    Big Bold Extreme Mascara - Black
-    <span>.</span>
-</a></div>
-                    <p class="mb-4">
-                        Big Bold Extreme Mascara in Black is a volumizing mascara designed to give your lashes a dramatic and bold look. It typically features a formula that thickens and lengthens lashes, providing intense black color for a striking effect. The brush is usually designed to help coat each lash evenly, adding volume and definition without clumping.
-
-                        This type of mascara is ideal for creating a more intense, eye-catching look, perfect for special occasions or whenever you want your lashes to stand out.
-                    </p>
+                    <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Products<span>.</span></a></div>
+                    <p class="mb-4">Company is a popular online platform that offers a wide range of beauty and fashion products, especially known in the Middle East. They cater to a variety of tastes and preferences, providing products</p>
 
                     <ul class="list-unstyled custom-social">
                         <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
